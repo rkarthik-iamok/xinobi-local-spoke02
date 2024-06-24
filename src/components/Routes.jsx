@@ -26,6 +26,7 @@ import Profile from "../pages/Profile";
 import Scenarios from "../pages/Scenarios";
 import Stepup from "../pages/Stepup";
 import TermsOfUse from "../pages/TermsOfUse";
+import Signup from "../pages/Signup";
 
 const AppRoutes = () => {
   return (
@@ -54,6 +55,7 @@ const AppRoutes = () => {
         <Route path="" element={<Profile />} />
       </Route>
       <Route path="/termsofuse" element={<TermsOfUse />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 };
