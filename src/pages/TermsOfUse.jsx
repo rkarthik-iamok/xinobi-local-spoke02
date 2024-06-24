@@ -13,10 +13,10 @@ function TermsOfUse() {
           <strong>Last Updated:</strong> June 24, 2024
         </p>
         <p>
-          Welcome to the Learning Okta Identity website (the "Service"). By
-          accessing or using the Service, you agree to be bound by these Terms
-          of Use (the "Terms"). If you do not agree to these Terms, please do
-          not use the Service.
+          Welcome to the KarthikTC. This site is a hobby wesbite to learn
+          Identity through Okta. By accessing or using the Service, you agree to
+          be bound by these Terms of Use (the "Terms"). If you do not agree to
+          these Terms, please do not use the Service.
         </p>
 
         <h2>1. Acceptance of Terms</h2>
@@ -85,6 +85,9 @@ function TermsOfUse() {
           </li>
         </ul>
       </div>
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
