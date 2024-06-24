@@ -12,6 +12,7 @@
 
 import { useOktaAuth } from "@okta/okta-react";
 import React, { useState, useEffect } from "react";
+import { redirect } from "react-router-dom";
 import { Button, Header } from "semantic-ui-react";
 
 const Home = () => {
@@ -36,6 +37,10 @@ const Home = () => {
     });
   };
 
+  const signup = async () => {
+    redirect("https://");
+  };
+
   if (!authState) {
     return <div>Loading...</div>;
   }
@@ -43,7 +48,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Header as="h1">Local App - Spoke 02</Header>
+        <Header as="h1">KarthikTC: Learn Okta for Identity Enthusiasts</Header>
 
         {authState.isAuthenticated && !userInfo && (
           <div>Loading user information...</div>
@@ -74,22 +79,20 @@ const Home = () => {
           <div>
             <p>
               <span>
-                This example shows you how to integrate Okta to your single page
-                React application.
+                This application is for Identity hobbyists. Click on Signup
+                button to create an Account.
               </span>
             </p>
-            <p>
-              When you click the login button below, you will be redirected to
-              the login page on your Okta org.
-            </p>
-            <p>
-              After you authenticate, you will be returned to this application
-              with an ID token and access token. These tokens will be stored in
-              local storage and can be retrieved at a later time.
-            </p>
-            <Button id="login-button" primary onClick={login}>
-              Login
-            </Button>
+
+            <div className="signup-login">
+              <Button id="login-button" primary onClick={login}>
+                Login
+              </Button>
+
+              <Button id="login-button" primary onClick={signup}>
+                Signup
+              </Button>
+            </div>
           </div>
         )}
       </div>

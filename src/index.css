@@ -21,3 +21,9 @@ body {
   background-color: white;
   padding: 10px;
 }
+
+.signup-login {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}

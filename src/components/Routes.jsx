@@ -25,6 +25,7 @@ import Messages from "../pages/Messages";
 import Profile from "../pages/Profile";
 import Scenarios from "../pages/Scenarios";
 import Stepup from "../pages/Stepup";
+import TermsOfUse from "../pages/TermsOfUse";
 
 const AppRoutes = () => {
   return (
@@ -52,6 +53,7 @@ const AppRoutes = () => {
       <Route path="/reauthenticate" element={<StepupAuthForce />}>
         <Route path="" element={<Profile />} />
       </Route>
+      <Route path="/termsofuse" element={<TermsOfUse />} />
     </Routes>
   );
 };
